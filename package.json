@@ -7,7 +7,8 @@
   "author": "BgFist <1565771886@qq.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@bgfist/weact": "^1.0.3",
