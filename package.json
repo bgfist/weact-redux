@@ -1,6 +1,6 @@
 {
   "name": "@bgfist/weact-redux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "d/index.d.ts",
   "repository": {
