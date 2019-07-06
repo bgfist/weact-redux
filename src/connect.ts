@@ -19,7 +19,7 @@ interface DataResponser {
 
 export default function connect(
   mapStateToData = defaultMapStateToData,
-  mapDispatchToActions: MapDispatchToActions | AnyObject = defaultMapDispatchToActions
+  mapDispatchToActions: MapDispatchToActions | AnyObject = defaultMapDispatchToActions,
 ) {
   const shouldSubscribe = Boolean(mapStateToData)
 
@@ -33,8 +33,6 @@ export default function connect(
       throw new Error("Store对象不存在!")
     }
 
-    // hack，以此区分page和component，懒得传参数区分
-    isComponent = isComponent || Boolean(config.methods)
     const origOnCreate = isComponent ? config.attached : config.onLoad
     const origOnDestroy = isComponent ? config.detached : config.onUnload
     const origOnShow = isComponent ? config.pageLifetimes && config.pageLifetimes.show : config.onShow
@@ -67,7 +65,7 @@ export default function connect(
       this.setData(mappedState)
     }
 
-    function onCreate(this: DataResponser, options: any) {
+    function onCreate(this: DataResponser, options: AnyObject) {
       if (typeof origOnCreate === "function") {
         origOnCreate.call(this, options)
       }
@@ -122,6 +120,8 @@ export default function connect(
       ? { attached: onCreate, detached: onDestroy, pageLifetimes: { show: onShow, hide: onHide } }
       : { onLoad: onCreate, onUnload: onDestroy, onShow, onHide }
 
-    return { ...config, actions: (mapDispatchToActions as MapDispatchToActions)(getApp().store.dispatch), ...hooks }
+    const actions = (mapDispatchToActions as MapDispatchToActions)(getApp().store.dispatch)
+
+    return { ...config, actions, ...hooks }
   }
 }

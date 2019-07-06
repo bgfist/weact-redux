@@ -1,4 +1,6 @@
-import { Store, Dispatch, ActionCreator, AnyAction } from "redux"
+import { Store, Dispatch, ActionCreator } from "redux"
+
+type AnyAction = any
 
 export { Unsubscribe, Dispatch } from "redux"
 
