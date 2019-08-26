@@ -11,7 +11,7 @@ export type State = ReturnType<Store["getState"]>
 export type Props = any
 
 export type Config = AnyObject &
-  (Page.WXPageConstructorOptions | Component.WXComponentConstructorOptions | Component.WXComponentBehaviorConstructOptions)
+  (Page.Options | Component.ComponentOptions | Component.BehaviourOptions)
 
 export type MapStateToData = (state: State, props?: Props) => AnyObject
 

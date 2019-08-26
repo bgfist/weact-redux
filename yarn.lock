@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@bgfist/weact@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@bgfist/weact/-/weact-1.0.8.tgz#a5ffb2b1c9c0d837e5c92c11b2595daf0e992e4a"
-  integrity sha512-WZ6tMR1BMF3cIm9WqioyNo08tf0UWK6KxIFgQNmD0T8hb9O0PqVC9yDexOyKJGJDb/J0Qf4Ilf398Xj7Z/H8aA==
+"@bgfist/weact@^1.0.17":
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/@bgfist/weact/-/weact-1.0.17.tgz#beed85e35c678a4fece7f576500fb7da6770a1a1"
+  integrity sha512-5LyeSPnJuT45p4IH2s39b1niIwU1zz0E2+CZ5AmKc9b9BrIFnT7XtQM2zndPxl1mUjS2mfDKnmFz5OtQthL8Jw==
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
