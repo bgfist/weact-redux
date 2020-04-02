@@ -14,10 +14,11 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@bgfist/weact": "^1.0.17",
+    "@bgfist/weact": "^2.0.0",
     "redux": "^4.0.1"
   },
   "devDependencies": {
+    "miniprogram-api-typings": "^2.10.3",
     "typescript": "^3.5.2"
   }
 }

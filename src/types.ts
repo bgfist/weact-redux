@@ -1,26 +1,7 @@
-import { Store, Dispatch, ActionCreator } from "redux"
-
-type AnyAction = any
+import { Store as ReduxStore, ActionCreator as ReduxActionCreator } from "redux"
 
 export { Unsubscribe, Dispatch } from "redux"
-
-export type Store = Store<any, any>
-
+export type Store = ReduxStore<any, any>
 export type State = ReturnType<Store["getState"]>
-
-export type Props = any
-
-export type Config = AnyObject &
-  (Page.Options | Component.ComponentOptions | Component.BehaviourOptions)
-
-export type MapStateToData = (state: State, props?: Props) => AnyObject
-
-export type MapDispatchToActions = (dispatch: Dispatch) => AnyObject
-
-export type AppConfig<D, E> = App.AppInstance<D> & E & { store: Store }
-
-export type ActionCreator = ActionCreator<AnyAction>
-
-export interface ActionCreators {
-  [k: string]: ActionCreator<AnyAction>
-}
+export type ActionCreator = ReduxActionCreator<any>
+export type ActionCreators = { [k: string]: ActionCreator }

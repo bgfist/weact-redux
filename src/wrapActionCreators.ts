@@ -30,7 +30,3 @@ export function bindActionCreators(actionCreators: ActionCreators, dispatch: Dis
   }
   return boundActionCreators
 }
-
-export default function wrapActionCreators(actionCreators: ActionCreators) {
-  return (dispatch: Dispatch) => bindActionCreators(actionCreators, dispatch)
-}

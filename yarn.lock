@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@bgfist/weact@^1.0.17":
-  version "1.0.17"
-  resolved "https://registry.yarnpkg.com/@bgfist/weact/-/weact-1.0.17.tgz#beed85e35c678a4fece7f576500fb7da6770a1a1"
-  integrity sha512-5LyeSPnJuT45p4IH2s39b1niIwU1zz0E2+CZ5AmKc9b9BrIFnT7XtQM2zndPxl1mUjS2mfDKnmFz5OtQthL8Jw==
+"@bgfist/weact@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@bgfist/weact/-/weact-2.0.0.tgz#fe2c1bf248313be4618b6ed07e81db313eade09d"
+  integrity sha512-9AdhTXa0C8c+wY0N3BTQjC5ydkik0gKX4qFddva2KU1rJNQzY/1bKva27L9QRRtNJwc4RCerKKndU9TByif+xw==
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
@@ -18,6 +18,11 @@ loose-envify@^1.4.0:
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
+
+miniprogram-api-typings@^2.10.3:
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/miniprogram-api-typings/-/miniprogram-api-typings-2.10.3.tgz#68597092d88176c95674ff20c09816f63b329089"
+  integrity sha512-1YQlAnqTggbQrNGaAl5ydlt3p+IiNawO+uNumcJCi16iLh0UQDAKp1F3h5+Wsk34YZbMHNwVMjbW5vJXGz8kdQ==
 
 redux@^4.0.1:
   version "4.0.1"

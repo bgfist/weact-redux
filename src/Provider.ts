@@ -1,7 +1,9 @@
-import { Store, AppConfig } from "./types"
+/// <reference types="miniprogram-api-typings" />
+
+import { Store } from "./types"
 
 export default function Provider(store: Store) {
-  return <D, E>(config: App.AppInstance<D> & E): AppConfig<D, E> => {
-    return { ...config, store }
+  return <T extends WechatMiniprogram.IAnyObject>(options: WechatMiniprogram.App.Options<T>): WechatMiniprogram.App.Options<T> => {
+    return { ...options, store }
   }
 }
